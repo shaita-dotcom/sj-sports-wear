@@ -19,36 +19,75 @@ nav img{width:62px;height:62px;object-fit:contain}.links{display:flex;gap:20px;f
 .btn{padding:13px 23px;border:1px solid var(--gold);font-weight:bold;transition:.2s}.btn.primary{background:var(--gold);color:#111}.btn:hover{transform:translateY(-2px)}
 .logo-wrap{display:flex;justify-content:center}.hero-logo{width:min(100%,460px);filter:drop-shadow(0 12px 35px rgba(201,170,85,.2))}
 section{padding:82px 8%}.section-tag{color:var(--gold);text-transform:uppercase;letter-spacing:2px;font-size:12px}.section-title{font-size:clamp(30px,4vw,50px);margin:6px 0 30px}
-.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px}.product{background:var(--card);border:1px solid #2a2928;overflow:hidden;transition:.25s}.product:hover{transform:translateY(-5px);border-color:var(--gold)}
-.product img{width:100%;height:430px;object-fit:cover;display:block}.product-info{padding:22px}.product h3{margin:0 0 8px;font-size:24px}.product p{color:var(--muted);margin:0}
+
+/* Category Filter Buttons Styling */
+.category-filters {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+.cat-btn {
+  background: var(--card);
+  color: var(--muted);
+  border: 1px solid #2a2928;
+  padding: 10px 18px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: .2s;
+  border-radius: 4px;
+}
+.cat-btn:hover, .cat-btn.active {
+  background: var(--gold);
+  color: #111;
+  border-color: var(--gold);
+}
+
+.search-container{margin-bottom:30px}
+.search-container input{width:100%;padding:15px 20px;background:var(--card);border:1px solid #2a2928;color:var(--text);font-size:16px;outline:none;transition:.2s}
+.search-container input:focus{border-color:var(--gold)}
+
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px}
+.product{background:var(--card);border:1px solid #2a2928;overflow:hidden;transition:.25s;display:flex;flex-direction:column;justify-content:space-between}
+.product:hover{transform:translateY(-5px);border-color:var(--gold)}
+.product img{width:100%;height:430px;object-fit:cover;display:block}
+.product-info{padding:22px;display:flex;flex-direction:column;flex-grow:1;justify-content:space-between}
+.product h3{margin:0 0 8px;font-size:24px}
+.product p{color:var(--muted);margin:0 0 12px}
+.product-code{display:inline-block;color:var(--gold);font-size:13px;margin-bottom:15px;font-weight:bold}
+.wa-order-btn{display:flex;align-items:center;justify-content:center;gap:8px;background:#25d366;color:#fff;padding:11px 15px;border-radius:4px;font-weight:bold;font-size:14px;transition:.2s;margin-top:10px}
+.wa-order-btn:hover{background:#1ebe5d;transform:translateY(-1px)}
+
 .custom{background:#111113;border-top:1px solid #242323;border-bottom:1px solid #242323}.custom-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.feature{padding:28px;background:#171719;border:1px solid #2a2928}.feature b{display:block;color:var(--gold);font-size:18px;margin-bottom:8px}
-.gallery-note{border:1px dashed #665c47;background:#131312;padding:35px;text-align:center;color:var(--muted)}.gallery-note strong{color:var(--gold)}
-.contact{display:grid;grid-template-columns:1fr 1fr;gap:45px}.contact-box{padding:32px;background:linear-gradient(135deg,#181714,#0e0e0f);border:1px solid #373126}.contact-box h3{font-size:28px;margin-top:0}.placeholder{border:1px dashed #555;padding:14px;margin:12px 0;color:#aaa}
-footer{text-align:center;padding:30px;border-top:1px solid #242323;color:#888;font-size:14px}
-.placeholder{
-  border:1px dashed #555;
-  padding:14px;
-  margin:12px 0;
-  color:#aaa;
-  display:flex;
-  align-items:center;
-  gap:12px;
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:45px}.contact-box{padding:32px;background:linear-gradient(135deg,#181714,#0e0e0f);border:1px solid #373126}.contact-box h3{font-size:28px;margin-top:0}
+.placeholder{border:1px dashed #555;padding:14px;margin:12px 0;color:#aaa;display:flex;align-items:center;gap:12px}
+.placeholder i{font-size:22px;width:28px;text-align:center;color:var(--gold)}
+.placeholder a{color:#f5f3ee}.placeholder a:hover{color:var(--gold)}
+
+/* Floating WhatsApp Direct Chat Button */
+.float-whatsapp {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #25d366;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  z-index: 100;
+  transition: .3s;
+}
+.float-whatsapp:hover {
+  transform: scale(1.1);
+  background: #1ebe5d;
 }
 
-.placeholder i{
-  font-size:22px;
-  width:28px;
-  text-align:center;
-  color:var(--gold);
-}
-
-.placeholder a{
-  color:#f5f3ee;
-}
-
-.placeholder a:hover{
-  color:var(--gold);
-}
 @media(max-width:760px){.links{display:none}.hero,.contact{grid-template-columns:1fr}.hero{padding-top:50px}.hero-logo{max-width:330px}.grid,.custom-grid{grid-template-columns:1fr}section{padding:60px 6%}.product img{height:350px}}
 </style>
 </head>
@@ -72,225 +111,355 @@ footer{text-align:center;padding:30px;border-top:1px solid #242323;color:#888;fo
 <section id="products">
  <div class="section-tag">Our collection</div>
  <h2 class="section-title">Featured Products</h2>
- <div class="grid">
-  <article class="product">
+ 
+ <div class="category-filters">
+  <button class="cat-btn active" onclick="filterCategory('all', this)">All Products</button>
+  <button class="cat-btn" onclick="filterCategory('gloves', this)">Boxing Gloves</button>
+  <button class="cat-btn" onclick="filterCategory('shorts', this)">Fight Shorts</button>
+  <button class="cat-btn" onclick="filterCategory('uniforms', this)">Uniforms & Gis</button>
+  <button class="cat-btn" onclick="filterCategory('tracksuit', this)">Tracksuits</button>
+ </div>
+
+ <div class="search-container">
+  <input type="text" id="productSearch" placeholder="🔍 Search products by name or code (e.g. gloves, BJJ, SHRT-MT-003)..." onkeyup="filterProducts()">
+ </div>
+
+ <div class="grid" id="productGrid">
+  <article class="product" data-category="tracksuit">
    <img src="assets/sportswear-set.jpg" alt="Custom sportswear set">
-   <div class="product-info"><h3>Custom Sportswear Set</h3><p>Custom-designed athletic apparel with branding and personalized artwork.</p></div>
+   <div class="product-info">
+    <div>
+     <h3>Custom Sportswear Set</h3>
+     <p>Custom-designed athletic apparel with branding and personalized artwork.</p>
+     <span class="product-code">Code: SET-SPT-001</span>
+    </div>
+    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Custom%20Sportswear%20Set%20(Code:%20SET-SPT-001)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+   </div>
   </article>
-  <article class="product">
+
+  <article class="product" data-category="tracksuit">
    <img src="assets/eagle-tracksuit.jpg" alt="Custom eagle tracksuit">
-   <div class="product-info"><h3>Custom Tracksuit</h3><p>Professional hoodie and trouser set with custom logo and full artwork options.</p></div>
+   <div class="product-info">
+    <div>
+     <h3>Custom Tracksuit</h3>
+     <p>Professional hoodie and trouser set with custom logo and full artwork options.</p>
+     <span class="product-code">Code: TRK-EGL-002</span>
+    </div>
+    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Custom%20Tracksuit%20(Code:%20TRK-EGL-002)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+   </div>
   </article>
-  <!-- Product 3: Fight Tiger Muay Thai Shorts -->
-<article class="product">
-  <img src="assets/fight-tiger-muay-thai-shorts.jpg" alt="Custom Fight Tiger Muay Thai Shorts">
-  <div class="product-info">
-    <h3>Custom Muay Thai Fight Shorts</h3>
-    <p>High-performance black and red kickboxing shorts with custom branding and tiger graphics.</p>
-    <span class="product-code">Code: SHRT-MT-003</span>
-  </div>
-</article>
-<article class="product">
-  <img src="assets/black-dragon-muay-thai-shorts.jpg" alt="Black Dragon Muay Thai Shorts">
-  <div class="product-info">
-    <h3>Black Dragon Muay Thai Shorts</h3>
-    <p>Premium black kickboxing shorts featuring intricate white dragon artwork, elastic waistband, and custom typography.</p>
-    <span class="product-code">Code: SHRT-DRG-010</span>
-  </div>
-</article>
-<article class="product">
-  <img src="assets/yellow-black-tracksuit.jpg" alt="Yellow and Black Fleece Tracksuit Set">
-  <div class="product-info">
-    <h3>Yellow & Black Fleece Tracksuit</h3>
-    <p>Comfortable yellow hoodie and matching trousers set with black side stripes and custom chest logo branding.</p>
-    <span class="product-code">Code: TRK-YLW-008</span>
-  </div>
-</article>
-<!-- Product 4: Gold Boxing Gloves -->
-<article class="product">
-  <img src="assets/gold-boxing-gloves.jpeg" alt="Metallic Gold Boxing Gloves">
-  <div class="product-info">
-    <h3>Metallic Gold Boxing Gloves</h3>
-    <p>Premium metallic gold training and sparring gloves with custom wrist strap support.</p>
-    <span class="product-code">Code: GLV-GLD-004</span>
-  </div>
-</article>
-<article class="product">
-  <img src="assets/skeleton-boxing-gloves.jpg" alt="Blue Skeleton Print Boxing Gloves">
-  <div class="product-info">
-    <h3>Custom Skeleton Print Boxing Gloves</h3>
-    <p>Pro-style white leather boxing gloves featuring custom blue skeleton hand graphic design.</p>
-    <span class="product-code">Code: GLV-SKL-003</span>
-  </div>
-</article>
-<article class="product">
-  <img src="assets/black-skeleton-boxing-gloves.jpg" alt="Black Skeleton Hand Print Boxing Gloves">
-  <div class="product-info">
-    <h3>Black Skeleton Print Boxing Gloves</h3>
-    <p>Premium black leather lace-up boxing gloves featuring custom white skeleton hand art and barbed wire wrist design.</p>
-    <span class="product-code">Code: GLV-SKB-007</span>
-  </div>
-</article>
-<article class="product">
-  <img src="assets/grey-teal-boxing-gloves.jpg" alt="Grey and Teal Pro Boxing Gloves">
-  <div class="product-info">
-    <h3>Pro Grey & Teal Boxing Gloves</h3>
-    <p>High-grade synthetic leather training gloves with ergonomic padding and custom wrist support.</p>
-    <span class="product-code">Code: GLV-GTL-004</span>
-  </div>
-</article>
-<article class="product">
-  <img src="assets/gold-white-boxing-set.jpg" alt="Custom Gold and White Boxing Gear Set">
-  <div class="product-info">
-    <h3>Custom Gold & White Boxing Gear Set</h3>
-    <p>Professional leather sparring set including lace-up boxing gloves and dual-tone protective headgear.</p>
-    <span class="product-code">Code: SET-GLD-006</span>
-  </div>
-</article>
-<article class="product">
-  <img src="assets/gold-flame-boxing-gloves.jpg" alt="Gold and White Flame Print Boxing Gloves">
-  <div class="product-info">
-    <h3>Gold & Flame Print Boxing Gloves</h3>
-    <p>Metallic gold leather training gloves featuring custom red and yellow flame graphics with wrist logo strap.</p>
-    <span class="product-code">Code: GLV-FLM-009</span>
-  </div>
-</article>
-<article class="product">
-  <img src="assets/camo-jiu-jitsu-gi.jpg.jpg" alt="Camouflage Jiu-Jitsu BJJ Gi Uniform">
-  <div class="product-info">
-    <h3>Camouflage Jiu-Jitsu (BJJ) Gi</h3>
-    <p>Durable camouflage pattern martial arts uniform featuring heavy-duty fabric stitching and custom chest branding.</p>
-    <span class="product-code">Code: GI-CAMO-011</span>
-  </div>
-</article>
-<article class="product">
-  <img src="assets/cool-bear-sports-jersey.jpg" alt="Custom Bear Graphic Sportswear Jersey">
-  <div class="product-info">
-    <h3>Custom Cool Bear Sportswear Jersey</h3>
-    <p>Vibrant multi-color sublimation printed athletic jersey featuring a cool bear design with custom numbering.</p>
-    <span class="product-code">Code: JRS-BER-012</span>
-  </div>
-</article>
-<article class="product">
-  <img src="assets/sports-headgear-collection.jpeg" alt="Custom Boxing and Rugby Protective Headgear Set">
-  <div class="product-info">
-    <h3>Pro Protective Headgear Collection</h3>
-    <p>Premium martial arts and soft shell rugby headguards featuring shock-absorbing padding and custom logo options.</p>
-    <span class="product-code">Code: HDG-PRO-016</span>
-  </div>
-</article>
-<article class="product">
-  <img src="assets/padded-rugby-headguards.jpeg" alt="Soft Shell Padded Rugby Scrum Cap Headguards">
-  <div class="product-info">
-    <h3>Soft Shell Padded Rugby Headguard</h3>
-    <p>Flexible impact-resistant scrum caps featuring custom trim colors, adjustable chin strap, and front logo patch.</p>
-    <span class="product-code">Code: HDG-RGB-017</span>
-  </div>
-</article>
-<article class="product">
-  <img src="assets/matte-gold-boxing-gloves.jpeg" alt="Pro Matte Gold Boxing Gloves">
-  <div class="product-info">
-    <h3>Pro Matte Gold Boxing Gloves</h3>
-    <p>Premium gold leather sparring gloves featuring custom logo emblem and heavy-duty black wrist enclosure.</p>
-    <span class="product-code">Code: GLV-GLD-018</span>
-  </div>
-</article>
-<article class="product">
-  <img src="assets/black-muay-thai-rashguard-shirt.jpg" alt="Black Muay Thai Graphic Athletic T-Shirt">
-  <div class="product-info">
-    <h3>Muay Thai Graphic Training T-Shirt</h3>
-    <p>Performance athletic rashguard shirt featuring bold Muay Thai typography, knee-strike silhouette graphic, and sleeve detail prints.</p>
-    <span class="product-code">Code: TSH-MTH-019</span>
-  </div>
-</article>
-<article class="product">
-  <img src="assets/blue-muay-thai-rashguard-shirt.jpg" alt="Blue Muay Thai Graphic Athletic T-Shirt">
-  <div class="product-info">
-    <h3>Blue Muay Thai Graphic Training T-Shirt</h3>
-    <p>Performance athletic rashguard shirt featuring sublimation print blue textures, front Muay Thai text graphic, and sleeve detailing.</p>
-    <span class="product-code">Code: TSH-MTH-020</span>
-  </div>
-</article>
-<article class="product">
-  <img src="assets/buddha-muay-thai-shirt.jpg" alt="Buddha Fight Wear Muay Thai Sublimated T-Shirt">
-  <div class="product-info">
-    <h3>Buddha Fight Wear Muay Thai T-Shirt</h3>
-    <p>Full sublimation athletic t-shirt featuring Thailand flag graphics, traditional Sak Yant tiger prints, and Buddha back art.</p>
-    <span class="product-code">Code: TSH-MTH-021</span>
-  </div>
-</article>
-<article class="product">
-  <img src="assets/gold-black-martial-arts-dobok.jpg" alt="Gold and Black Martial Arts Taekwondo Uniform">
-  <div class="product-info">
-    <h3>Gold & Black Martial Arts Uniform</h3>
-    <p>Traditional martial arts Dobok featuring a gold jacket with black V-neck collar, matching black trousers, and custom chest badge.</p>
-    <span class="product-code">Code: SUIT-MA-022</span>
-  </div>
-</article>
-<article class="product">
-  <img src="assets/blue-muay-thai-rashguard-back.jpg" alt="Blue Muay Thai Graphic Athletic T-Shirt Back View">
-  <div class="product-info">
-    <h3>Blue Muay Thai Graphic T-Shirt (Back View)</h3>
-    <p>Performance athletic rashguard shirt back print featuring blue textured graphics, fighter silhouettes, and top back Muay Thai logo.</p>
-    <span class="product-code">Code: TSH-MTH-023</span>
-  </div>
-</article>
-<article class="product">
-  <img src="assets/black-sports-laptop-briefcase-bag.jpg" alt="Black Executive Laptop Briefcase Messenger Bag">
-  <div class="product-info">
-    <h3>Executive Sports Laptop & Messenger Bag</h3>
-    <p>Sleek black padded laptop shoulder bag featuring a front zip pocket, carrying handles, detachable strap, and custom gold brand emblem.</p>
-    <span class="product-code">Code: BAG-EXE-024</span>
-  </div>
-</article>
-<article class="product">
-  <img src="assets/red-black-mma-compression-set.jpg" alt="Red and Black MMA Rashguard Compression Set">
-  <div class="product-info">
-    <h3>Red & Black MMA Compression Set</h3>
-    <p>Complete 3-piece combat set including long-sleeve rashguard, compression spats, and fight shorts with custom branding.</p>
-    <span class="product-code">Code: SET-MMA-025</span>
-  </div>
-</article>
-<article class="product">
-  <img src="assets/white-karate-gi-uniform.jpg" alt="Premium White Martial Arts Karate Uniform Gi">
-  <div class="product-info">
-    <h3>Premium White Karate Uniform</h3>
-    <p>High-performance pearl weave martial arts gi featuring reinforced stitching, breathable lightweight fabric, and custom chest logo patch.</p>
-    <span class="product-code">Code: GI-KRT-026</span>
-  </div>
-</article>
-<article class="product">
-  <img src="assets/gold-black-taekwondo-uniform.jpg" alt="Premium Gold and Black Martial Arts Uniform">
-  <div class="product-info">
-    <h3>Pro Gold & Black Martial Arts Suit</h3>
-    <p>High-quality martial arts gi featuring gold top with black collar accent, matching black pants, black belt, and custom chest emblem.</p>
-    <span class="product-code">Code: SUIT-MA-027</span>
-  </div>
-</article>
-<article class="product">
-  <img src="assets/black-bjj-jiu-jitsu-gi.jpg" alt="Black Brazilian Jiu-Jitsu BJJ Gi Uniform">
-  <div class="product-info">
-    <h3>Pro Black Jiu-Jitsu Gi</h3>
-    <p>Durable black martial arts gi featuring white rank belt, reinforced collar stitching, and gold custom brand logos on chest and back.</p>
-    <span class="product-code">Code: GI-BJJ-028</span>
-  </div>
-</article>
-<article class="product">
-  <img src="assets/yellow-black-boxing-gear-set.jpg" alt="Complete Yellow and Black Boxing Gear Training Kit">
-  <div class="product-info">
-    <h3>Pro Yellow & Black Boxing Gear Set</h3>
-    <p>Complete training set including boxing singlet, shorts, headguard, sparring gloves, MMA gloves, focus pad, and double-end speed ball.</p>
-    <span class="product-code">Code: SET-BOX-029</span>
-  </div>
-</article>
-<article class="product">
-  <img src="assets/women-monogram-workout-set.jpeg" alt="Women Luxury Patterned Athletic Tank Top and Leggings Set">
-  <div class="product-info">
-    <h3>Women's Patterned Workout Activewear Set</h3>
-    <p>Two-piece athletic set featuring high-waisted printed leggings and matching racerback tank top with gold brand emblem accents.</p>
-    <span class="product-code">Code: SET-WACT-030</span>
-  </div>
-</article>
+
+  <article class="product" data-category="shorts">
+   <img src="assets/fight-tiger-muay-thai-shorts.jpg" alt="Custom Fight Tiger Muay Thai Shorts">
+   <div class="product-info">
+    <div>
+     <h3>Custom Muay Thai Fight Shorts</h3>
+     <p>High-performance black and red kickboxing shorts with custom branding and tiger graphics.</p>
+     <span class="product-code">Code: SHRT-MT-003</span>
+    </div>
+    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Custom%20Muay%20Thai%20Fight%20Shorts%20(Code:%20SHRT-MT-003)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+   </div>
+  </article>
+
+  <article class="product" data-category="shorts">
+   <img src="assets/black-dragon-muay-thai-shorts.jpg" alt="Black Dragon Muay Thai Shorts">
+   <div class="product-info">
+    <div>
+     <h3>Black Dragon Muay Thai Shorts</h3>
+     <p>Premium black kickboxing shorts featuring intricate white dragon artwork, elastic waistband, and custom typography.</p>
+     <span class="product-code">Code: SHRT-DRG-010</span>
+    </div>
+    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Black%20Dragon%20Muay%20Thai%20Shorts%20(Code:%20SHRT-DRG-010)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+   </div>
+  </article>
+
+  <article class="product" data-category="tracksuit">
+   <img src="assets/yellow-black-tracksuit.jpg" alt="Yellow and Black Fleece Tracksuit Set">
+   <div class="product-info">
+    <div>
+     <h3>Yellow & Black Fleece Tracksuit</h3>
+     <p>Comfortable yellow hoodie and matching trousers set with black side stripes and custom chest logo branding.</p>
+     <span class="product-code">Code: TRK-YLW-008</span>
+    </div>
+    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Yellow%20%26%20Black%20Fleece%20Tracksuit%20(Code:%20TRK-YLW-008)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+   </div>
+  </article>
+
+  <article class="product" data-category="gloves">
+   <img src="assets/gold-boxing-gloves.jpeg" alt="Metallic Gold Boxing Gloves">
+   <div class="product-info">
+    <div>
+     <h3>Metallic Gold Boxing Gloves</h3>
+     <p>Premium metallic gold training and sparring gloves with custom wrist strap support.</p>
+     <span class="product-code">Code: GLV-GLD-004</span>
+    </div>
+    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Metallic%20Gold%20Boxing%20Gloves%20(Code:%20GLV-GLD-004)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+   </div>
+  </article>
+
+  <article class="product" data-category="gloves">
+   <img src="assets/skeleton-boxing-gloves.jpg" alt="Blue Skeleton Print Boxing Gloves">
+   <div class="product-info">
+    <div>
+     <h3>Custom Skeleton Print Boxing Gloves</h3>
+     <p>Pro-style white leather boxing gloves featuring custom blue skeleton hand graphic design.</p>
+     <span class="product-code">Code: GLV-SKL-003</span>
+    </div>
+    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Custom%20Skeleton%20Print%20Boxing%20Gloves%20(Code:%20GLV-SKL-003)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+   </div>
+  </article>
+
+  <article class="product" data-category="gloves">
+   <img src="assets/black-skeleton-boxing-gloves.jpg" alt="Black Skeleton Hand Print Boxing Gloves">
+   <div class="product-info">
+    <div>
+     <h3>Black Skeleton Print Boxing Gloves</h3>
+     <p>Premium black leather lace-up boxing gloves featuring custom white skeleton hand art and barbed wire wrist design.</p>
+     <span class="product-code">Code: GLV-SKB-007</span>
+    </div>
+    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Black%20Skeleton%20Print%20Boxing%20Gloves%20(Code:%20GLV-SKB-007)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+   </div>
+  </article>
+
+  <article class="product" data-category="gloves">
+   <img src="assets/grey-teal-boxing-gloves.jpg" alt="Grey and Teal Pro Boxing Gloves">
+   <div class="product-info">
+    <div>
+     <h3>Pro Grey & Teal Boxing Gloves</h3>
+     <p>High-grade synthetic leather training gloves with ergonomic padding and custom wrist support.</p>
+     <span class="product-code">Code: GLV-GTL-004</span>
+    </div>
+    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Pro%20Grey%20%26%20Teal%20Boxing%20Gloves%20(Code:%20GLV-GTL-004)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+   </div>
+  </article>
+
+  <article class="product" data-category="gloves">
+   <img src="assets/gold-white-boxing-set.jpg" alt="Custom Gold and White Boxing Gear Set">
+   <div class="product-info">
+    <div>
+     <h3>Custom Gold & White Boxing Gear Set</h3>
+     <p>Professional leather sparring set including lace-up boxing gloves and dual-tone protective headgear.</p>
+     <span class="product-code">Code: SET-GLD-006</span>
+    </div>
+    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Custom%20Gold%20%26%20White%20Boxing%20Gear%20Set%20(Code:%20SET-GLD-006)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+   </div>
+  </article>
+
+  <article class="product" data-category="gloves">
+   <img src="assets/gold-flame-boxing-gloves.jpg" alt="Gold and White Flame Print Boxing Gloves">
+   <div class="product-info">
+    <div>
+     <h3>Gold & Flame Print Boxing Gloves</h3>
+     <p>Metallic gold leather training gloves featuring custom red and yellow flame graphics with wrist logo strap.</p>
+     <span class="product-code">Code: GLV-FLM-009</span>
+    </div>
+    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Gold%20%26%20Flame%20Print%20Boxing%20Gloves%20(Code:%20GLV-FLM-009)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+   </div>
+  </article>
+
+  <article class="product" data-category="uniforms">
+   <img src="assets/camo-jiu-jitsu-gi.jpg.jpg" alt="Camouflage Jiu-Jitsu BJJ Gi Uniform">
+   <div class="product-info">
+    <div>
+     <h3>Camouflage Jiu-Jitsu (BJJ) Gi</h3>
+     <p>Durable camouflage pattern martial arts uniform featuring heavy-duty fabric stitching and custom chest branding.</p>
+     <span class="product-code">Code: GI-CAMO-011</span>
+    </div>
+    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Camouflage%20Jiu-Jitsu%20(BJJ)%20Gi%20(Code:%20GI-CAMO-011)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+   </div>
+  </article>
+
+  <article class="product" data-category="tracksuit">
+   <img src="assets/cool-bear-sports-jersey.jpg" alt="Custom Bear Graphic Sportswear Jersey">
+   <div class="product-info">
+    <div>
+     <h3>Custom Cool Bear Sportswear Jersey</h3>
+     <p>Vibrant multi-color sublimation printed athletic jersey featuring a cool bear design with custom numbering.</p>
+     <span class="product-code">Code: JRS-BER-012</span>
+    </div>
+    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Custom%20Cool%20Bear%20Sportswear%20Jersey%20(Code:%20JRS-BER-012)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+   </div>
+  </article>
+
+  <article class="product" data-category="gloves">
+   <img src="assets/sports-headgear-collection.jpeg" alt="Custom Boxing and Rugby Protective Headgear Set">
+   <div class="product-info">
+    <div>
+     <h3>Pro Protective Headgear Collection</h3>
+     <p>Premium martial arts and soft shell rugby headguards featuring shock-absorbing padding and custom logo options.</p>
+     <span class="product-code">Code: HDG-PRO-016</span>
+    </div>
+    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Pro%20Protective%20Headgear%20Collection%20(Code:%20HDG-PRO-016)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+   </div>
+  </article>
+
+  <article class="product" data-category="gloves">
+   <img src="assets/padded-rugby-headguards.jpeg" alt="Soft Shell Padded Rugby Scrum Cap Headguards">
+   <div class="product-info">
+    <div>
+     <h3>Soft Shell Padded Rugby Headguard</h3>
+     <p>Flexible impact-resistant scrum caps featuring custom trim colors, adjustable chin strap, and front logo patch.</p>
+     <span class="product-code">Code: HDG-RGB-017</span>
+    </div>
+    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Soft%20Shell%20Padded%20Rugby%20Headguard%20(Code:%20HDG-RGB-017)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+   </div>
+  </article>
+
+  <article class="product" data-category="gloves">
+   <img src="assets/matte-gold-boxing-gloves.jpeg" alt="Pro Matte Gold Boxing Gloves">
+   <div class="product-info">
+    <div>
+     <h3>Pro Matte Gold Boxing Gloves</h3>
+     <p>Premium gold leather sparring gloves featuring custom logo emblem and heavy-duty black wrist enclosure.</p>
+     <span class="product-code">Code: GLV-GLD-018</span>
+    </div>
+    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Pro%20Matte%20Gold%20Boxing%20Gloves%20(Code:%20GLV-GLD-018)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+   </div>
+  </article>
+
+  <article class="product" data-category="tracksuit">
+   <img src="assets/black-muay-thai-rashguard-shirt.jpg" alt="Black Muay Thai Graphic Athletic T-Shirt">
+   <div class="product-info">
+    <div>
+     <h3>Muay Thai Graphic Training T-Shirt</h3>
+     <p>Performance athletic rashguard shirt featuring bold Muay Thai typography, knee-strike silhouette graphic, and sleeve detail prints.</p>
+     <span class="product-code">Code: TSH-MTH-019</span>
+    </div>
+    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Muay%20Thai%20Graphic%20Training%20T-Shirt%20(Code:%20TSH-MTH-019)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+   </div>
+  </article>
+
+  <article class="product" data-category="tracksuit">
+   <img src="assets/blue-muay-thai-rashguard-shirt.jpg" alt="Blue Muay Thai Graphic Athletic T-Shirt">
+   <div class="product-info">
+    <div>
+     <h3>Blue Muay Thai Graphic Training T-Shirt</h3>
+     <p>Performance athletic rashguard shirt featuring sublimation print blue textures, front Muay Thai text graphic, and sleeve detailing.</p>
+     <span class="product-code">Code: TSH-MTH-020</span>
+    </div>
+    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Blue%20Muay%20Thai%20Graphic%20Training%20T-Shirt%20(Code:%20TSH-MTH-020)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+   </div>
+  </article>
+
+  <article class="product" data-category="tracksuit">
+   <img src="assets/buddha-muay-thai-shirt.jpg" alt="Buddha Fight Wear Muay Thai Sublimated T-Shirt">
+   <div class="product-info">
+    <div>
+     <h3>Buddha Fight Wear Muay Thai T-Shirt</h3>
+     <p>Full sublimation athletic t-shirt featuring Thailand flag graphics, traditional Sak Yant tiger prints, and Buddha back art.</p>
+     <span class="product-code">Code: TSH-MTH-021</span>
+    </div>
+    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Buddha%20Fight%20Wear%20Muay%20Thai%20T-Shirt%20(Code:%20TSH-MTH-021)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+   </div>
+  </article>
+
+  <article class="product" data-category="uniforms">
+   <img src="assets/gold-black-martial-arts-dobok.jpg" alt="Gold and Black Martial Arts Taekwondo Uniform">
+   <div class="product-info">
+    <div>
+     <h3>Gold & Black Martial Arts Uniform</h3>
+     <p>Traditional martial arts Dobok featuring a gold jacket with black V-neck collar, matching black trousers, and custom chest badge.</p>
+     <span class="product-code">Code: SUIT-MA-022</span>
+    </div>
+    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Gold%20%26%20Black%20Martial%20Arts%20Uniform%20(Code:%20SUIT-MA-022)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+   </div>
+  </article>
+
+  <article class="product" data-category="tracksuit">
+   <img src="assets/blue-muay-thai-rashguard-back.jpg" alt="Blue Muay Thai Graphic Athletic T-Shirt Back View">
+   <div class="product-info">
+    <div>
+     <h3>Blue Muay Thai Graphic T-Shirt (Back View)</h3>
+     <p>Performance athletic rashguard shirt back print featuring blue textured graphics, fighter silhouettes, and top back Muay Thai logo.</p>
+     <span class="product-code">Code: TSH-MTH-023</span>
+    </div>
+    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Blue%20Muay%20Thai%20Graphic%20T-Shirt%20(Back%20View)%20(Code:%20TSH-MTH-023)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+   </div>
+  </article>
+
+  <article class="product" data-category="tracksuit">
+   <img src="assets/black-sports-laptop-briefcase-bag.jpg" alt="Black Executive Laptop Briefcase Messenger Bag">
+   <div class="product-info">
+    <div>
+     <h3>Executive Sports Laptop & Messenger Bag</h3>
+     <p>Sleek black padded laptop shoulder bag featuring a front zip pocket, carrying handles, detachable strap, and custom gold brand emblem.</p>
+     <span class="product-code">Code: BAG-EXE-024</span>
+    </div>
+    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Executive%20Sports%20Laptop%20%26%20Messenger%20Bag%20(Code:%20BAG-EXE-024)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+   </div>
+  </article>
+
+  <article class="product" data-category="tracksuit">
+   <img src="assets/red-black-mma-compression-set.jpg" alt="Red and Black MMA Rashguard Compression Set">
+   <div class="product-info">
+    <div>
+     <h3>Red & Black MMA Compression Set</h3>
+     <p>Complete 3-piece combat set including long-sleeve rashguard, compression spats, and fight shorts with custom branding.</p>
+     <span class="product-code">Code: SET-MMA-025</span>
+    </div>
+    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Red%20%26%20Black%20MMA%20Compression%20Set%20(Code:%20SET-MMA-025)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+   </div>
+  </article>
+
+  <article class="product" data-category="uniforms">
+   <img src="assets/white-karate-gi-uniform.jpg" alt="Premium White Martial Arts Karate Uniform Gi">
+   <div class="product-info">
+    <div>
+     <h3>Premium White Karate Uniform</h3>
+     <p>High-performance pearl weave martial arts gi featuring reinforced stitching, breathable lightweight fabric, and custom chest logo patch.</p>
+     <span class="product-code">Code: GI-KRT-026</span>
+    </div>
+    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Premium%20White%20Karate%20Uniform%20(Code:%20GI-KRT-026)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+   </div>
+  </article>
+
+  <article class="product" data-category="uniforms">
+   <img src="assets/gold-black-taekwondo-uniform.jpg" alt="Premium Gold and Black Martial Arts Uniform">
+   <div class="product-info">
+    <div>
+     <h3>Pro Gold & Black Martial Arts Suit</h3>
+     <p>High-quality martial arts gi featuring gold top with black collar accent, matching black pants, black belt, and custom chest emblem.</p>
+     <span class="product-code">Code: SUIT-MA-027</span>
+    </div>
+    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Pro%20Gold%20%26%20Black%20Martial%20Arts%20Suit%20(Code:%20SUIT-MA-027)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+   </div>
+  </article>
+
+  <article class="product" data-category="uniforms">
+   <img src="assets/black-bjj-jiu-jitsu-gi.jpg" alt="Black Brazilian Jiu-Jitsu BJJ Gi Uniform">
+   <div class="product-info">
+    <div>
+     <h3>Pro Black Jiu-Jitsu Gi</h3>
+     <p>Durable black martial arts gi featuring white rank belt, reinforced collar stitching, and gold custom brand logos on chest and back.</p>
+     <span class="product-code">Code: GI-BJJ-028</span>
+    </div>
+    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Pro%20Black%20Jiu-Jitsu%20Gi%20(Code:%20GI-BJJ-028)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+   </div>
+  </article>
+
+  <article class="product" data-category="gloves">
+   <img src="assets/yellow-black-boxing-gear-set.jpg" alt="Complete Yellow and Black Boxing Gear Training Kit">
+   <div class="product-info">
+    <div>
+     <h3>Pro Yellow & Black Boxing Gear Set</h3>
+     <p>Complete training set including boxing singlet, shorts, headguard, sparring gloves, MMA gloves, focus pad, and double-end speed ball.</p>
+     <span class="product-code">Code: SET-BOX-029</span>
+    </div>
+    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Pro%20Yellow%20%26%20Black%20Boxing%20Gear%20Set%20(Code:%20SET-BOX-029)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+   </div>
+  </article>
+
+  <article class="product" data-category="tracksuit">
+   <img src="assets/women-monogram-workout-set.jpeg" alt="Women Luxury Patterned Athletic Tank Top and Leggings Set">
+   <div class="product-info">
+    <div>
+     <h3>Women's Patterned Workout Activewear Set</h3>
+     <p>Two-piece athletic set featuring high-waisted printed leggings and matching racerback tank top with gold brand emblem accents.</p>
+     <span class="product-code">Code: SET-WACT-030</span>
+    </div>
+    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Women's%20Patterned%20Workout%20Activewear%20Set%20(Code:%20SET-WACT-030)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+   </div>
+  </article>
  </div>
 </section>
 
@@ -303,15 +472,6 @@ footer{text-align:center;padding:30px;border-top:1px solid #242323;color:#888;fo
   <div class="feature"><b>03. Production</b>We manufacture your custom sportswear for your team, gym or brand.</div>
  </div>
 </section>
-<!-- 
-<section id="gallery">
- <div class="section-tag">Growing catalog</div>
- <h2 class="section-title">Product Gallery</h2>
- <div class="gallery-note">
-  <strong>Ready for 100+ photos</strong><br>
-  This section can be expanded by copying a product card and changing the image and product name.
- </div>
-</section> -->
 
 <section id="contact">
  <div class="contact">
@@ -320,50 +480,76 @@ footer{text-align:center;padding:30px;border-top:1px solid #242323;color:#888;fo
    <h2 class="section-title">Start Your Custom Order</h2>
    <p>Tell us what product you need, quantity, design idea and destination country. We will discuss the details and prepare a quote.</p>
   </div>
-  <!-- contact section -->
-<div class="contact-box">
-  <h3>Contact SJ Sports Wear</h3>
+  <div class="contact-box">
+   <h3>Contact SJ Sports Wear</h3>
 
-  <div class="placeholder">
+   <div class="placeholder">
     <i class="fab fa-whatsapp"></i>
-    <a href="https://wa.me/923486879855" target="_blank">
-      WhatsApp
-    </a>
-  </div>
+    <a href="https://wa.me/923486879855" target="_blank">WhatsApp</a>
+   </div>
 
-  <div class="placeholder">
+   <div class="placeholder">
     <i class="fab fa-instagram"></i>
-    <a href="https://www.instagram.com/sjsportswear4" target="_blank">
-      Instagram
-    </a>
-  </div>
+    <a href="https://www.instagram.com/sjsportswear4" target="_blank">Instagram</a>
+   </div>
 
-  <div class="placeholder">
+   <div class="placeholder">
     <i class="fab fa-facebook"></i>
-    <a href="https://www.facebook.com/share/1Def6C8NNi/" target="_blank">
-      Facebook
-    </a>
-  </div>
+    <a href="https://www.facebook.com/share/1Def6C8NNi/" target="_blank">Facebook</a>
+   </div>
 
-  <div class="placeholder">
+   <div class="placeholder">
     <i class="fas fa-envelope"></i>
-    <a href="mailto:shaita967@gmail.com">
-      Email
-    </a>
+    <a href="mailto:shaita967@gmail.com">Email</a>
+   </div>
+
+   <p style="color:#aaa;font-size:14px;margin-top:15px">
+    Click any contact option to connect with SJ Sports Wear.
+   </p>
   </div>
-
-  <p style="color:#aaa;font-size:14px">
-    Click any contact option to connect with SJ Sports Wear.
-  </p>
-</div>
-
-  <p style="color:#aaa;font-size:14px">
-    Click any contact option to connect with SJ Sports Wear.
-  </p>
-</div>
  </div>
 </section>
 </main>
+
+<a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20inquire%20about%20custom%20sportswear." class="float-whatsapp" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
 <footer>© 2026 SJ Sports Wear • Custom Athletic Performance</footer>
+
+<script>
+// Filter by Category Buttons
+function filterCategory(category, btn) {
+  let buttons = document.getElementsByClassName('cat-btn');
+  for (let b of buttons) {
+    b.classList.remove('active');
+  }
+  btn.classList.add('active');
+
+  let products = document.getElementsByClassName('product');
+  for (let p of products) {
+    if (category === 'all' || p.getAttribute('data-category') === category) {
+      p.style.display = "";
+    } else {
+      p.style.display = "none";
+    }
+  }
+}
+
+// Search Filter Input
+function filterProducts() {
+  let input = document.getElementById('productSearch').value.toLowerCase();
+  let products = document.getElementsByClassName('product');
+  for (let i = 0; i < products.link; i++) {} // placeholder logic check
+  for (let i = 0; i < products.length; i++) {
+    let text = products[i].innerText.toLowerCase();
+    if (text.includes(input)) {
+      products[i].style.display = "";
+    } else {
+      products[i].style.display = "none";
+    }
+  }
+}
+</script>
 </body>
 </html>
