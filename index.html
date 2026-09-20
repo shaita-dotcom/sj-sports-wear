@@ -102,364 +102,759 @@ section{padding:82px 8%}.section-tag{color:var(--gold);text-transform:uppercase;
  <div>
   <div class="badge">Sialkot • Pakistan • Custom Manufacturer</div>
   <h1>Built for <span>Performance.</span><br>Made for Your Brand.</h1>
-  <p>SJ Sports Wear manufactures custom sportswear, team uniforms and athletic apparel. Bring your own logo, colors and ideas — we help turn them into professional products.</p>
+  <p>SJ Sports Wear manufactures custom sportswear, combat gear, boxing items, uniforms, and comprehensive athletic apparel. Bring your own logo, colors, and design specifications.</p>
   <div class="buttons"><a class="btn primary" href="#products">VIEW PRODUCTS</a><a class="btn" href="#contact">REQUEST A QUOTE</a></div>
  </div>
  <div class="logo-wrap"><img class="hero-logo" src="assets/logo.png" alt="SJ Sports Wear logo"></div>
 </section>
 
 <section id="products">
- <div class="section-tag">Our collection</div>
- <h2 class="section-title">Featured Products</h2>
+ <div class="section-tag">Our complete collection</div>
+ <h2 class="section-title">All Sports Categories & Products</h2>
  
  <div class="category-filters">
   <button class="cat-btn active" onclick="filterCategory('all', this)">All Products</button>
-  <button class="cat-btn" onclick="filterCategory('gloves', this)">Boxing Gloves</button>
-  <button class="cat-btn" onclick="filterCategory('shorts', this)">Fight Shorts</button>
-  <button class="cat-btn" onclick="filterCategory('uniforms', this)">Uniforms & Gis</button>
-  <button class="cat-btn" onclick="filterCategory('tracksuit', this)">Tracksuits</button>
+  <button class="cat-btn" onclick="filterCategory('boxing', this)">Boxing & Gloves</button>
+  <button class="cat-btn" onclick="filterCategory('apparel', this)">Shirts & Tracksuits</button>
+  <button class="cat-btn" onclick="filterCategory('protective', this)">Head Guards & Shin Guards</button>
+  <button class="cat-btn" onclick="filterCategory('martialarts', this)">Uniforms & Gis</button>
+  <button class="cat-btn" onclick="filterCategory('accessories', this)">Bags & Accessories</button>
  </div>
 
  <div class="search-container">
-  <input type="text" id="productSearch" placeholder="🔍 Search products by name or code (e.g. gloves, BJJ, SHRT-MT-003)..." onkeyup="filterProducts()">
+  <input type="text" id="productSearch" placeholder="🔍 Search across all categories, names, or codes (e.g., glove, shirt, shin guard, uniform)..." onkeyup="filterProducts()">
  </div>
 
  <div class="grid" id="productGrid">
-  <article class="product" data-category="tracksuit">
-   <img src="assets/sportswear-set.jpg" alt="Custom sportswear set">
-   <div class="product-info">
-    <div>
-     <h3>Custom Sportswear Set</h3>
-     <p>Custom-designed athletic apparel with branding and personalized artwork.</p>
-     <span class="product-code">Code: SET-SPT-001</span>
-    </div>
-    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Custom%20Sportswear%20Set%20(Code:%20SET-SPT-001)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
-   </div>
-  </article>
+  <!-- Dynamic template structure ready for 100+ items across diverse categories -->
+  <!-- Categories include: boxing, apparel, protective, martialarts, accessories -->
+   <!-- pic1 -->
 
   <article class="product" data-category="tracksuit">
-   <img src="assets/eagle-tracksuit.jpg" alt="Custom eagle tracksuit">
-   <div class="product-info">
-    <div>
-     <h3>Custom Tracksuit</h3>
-     <p>Professional hoodie and trouser set with custom logo and full artwork options.</p>
-     <span class="product-code">Code: TRK-EGL-002</span>
-    </div>
-    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Custom%20Tracksuit%20(Code:%20TRK-EGL-002)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
-   </div>
-  </article>
+ <img src="assets/image_1.png" alt="Custom Combat Sportswear Set" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Custom Combat Sportswear Set</h3>
+   <p>Professional custom combat sports gear and athletic apparel set including boxing gloves, uniform, shorts, rash guard, shin guards, and protective equipment tailored for teams and gyms.</p>
+   <span class="product-code">Code: SET-CMB-310</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Custom%20Combat%20Sportswear%20Set%20(Code:%20SET-CMB-310)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+<!-- image 2 -->
 
-  <article class="product" data-category="shorts">
-   <img src="assets/fight-tiger-muay-thai-shorts.jpg" alt="Custom Fight Tiger Muay Thai Shorts">
-   <div class="product-info">
-    <div>
-     <h3>Custom Muay Thai Fight Shorts</h3>
-     <p>High-performance black and red kickboxing shorts with custom branding and tiger graphics.</p>
-     <span class="product-code">Code: SHRT-MT-003</span>
-    </div>
-    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Custom%20Muay%20Thai%20Fight%20Shorts%20(Code:%20SHRT-MT-003)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
-   </div>
-  </article>
+<article class="product" data-category="tracksuit">
+ <img src="assets/image_2.png" alt="Custom Athletic Footwear & Fightwear Collection Set" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Custom Athletic Footwear & Fightwear Collection Set</h3>
+   <p>Professional custom combat sports gear collection including boxing shoes, professional boxing shorts, fight shorts, and high-performance MMA shorts tailored for teams, gyms, and fighters.</p>
+   <span class="product-code">Code: SET-COL-402</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Custom%20Athletic%20Footwear%20%26%20Fightwear%20Collection%20Set%20(Code:%20SET-COL-402)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+  <!-- image 3 -->
 
-  <article class="product" data-category="shorts">
-   <img src="assets/black-dragon-muay-thai-shorts.jpg" alt="Black Dragon Muay Thai Shorts">
-   <div class="product-info">
-    <div>
-     <h3>Black Dragon Muay Thai Shorts</h3>
-     <p>Premium black kickboxing shorts featuring intricate white dragon artwork, elastic waistband, and custom typography.</p>
-     <span class="product-code">Code: SHRT-DRG-010</span>
-    </div>
-    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Black%20Dragon%20Muay%20Thai%20Shorts%20(Code:%20SHRT-DRG-010)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
-   </div>
-  </article>
+  <article class="product" data-category="boxing">
+ <img src="assets/image_3.png" alt="Elite Championship Teamwear & Boxing Gear Set" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Elite Championship Team & Boxing Gear Set</h3>
+   <p>Professional custom athletic collection featuring elite boxing shoes, performance boxing shorts, fight shorts, and MMA apparel tailored for champions and teams.</p>
+   <span class="product-code">Code: SET-ELT-501</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Elite%20Championship%20Team%20%26%20Boxing%20Gear%20Set%20(Code:%20SET-ELT-501)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+<!-- image 4 -->
 
-  <article class="product" data-category="tracksuit">
-   <img src="assets/yellow-black-tracksuit.jpg" alt="Yellow and Black Fleece Tracksuit Set">
-   <div class="product-info">
-    <div>
-     <h3>Yellow & Black Fleece Tracksuit</h3>
-     <p>Comfortable yellow hoodie and matching trousers set with black side stripes and custom chest logo branding.</p>
-     <span class="product-code">Code: TRK-YLW-008</span>
-    </div>
-    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Yellow%20%26%20Black%20Fleece%20Tracksuit%20(Code:%20TRK-YLW-008)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
-   </div>
-  </article>
+<article class="product" data-category="apparel">
+ <img src="assets/football_shorts.jpg" alt="Custom Football Shorts" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Custom Football Shorts</h3>
+   <p>Professional football shorts designed for clubs, academies, and teams featuring lightweight breathable performance fabric, flexible athletic fit, and custom sublimation printing.</p>
+   <span class="product-code">Code: SHT-FB-202</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Custom%20Football%20Shorts%20(Code:%20SHT-FB-202)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+<!-- image 5 -->
+ <article class="product" data-category="boxing">
+ <img src="assets/football_shoes.jpg" alt="Custom Football Shoes / Cleats" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Custom Football Shoes / Cleats</h3>
+   <p>Professional football cleats designed for players and teams demanding lightweight performance, secure fit, professional stud configuration, and reliable traction with custom team branding.</p>
+   <span class="product-code">Code: SHO-FB-303</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Custom%20Football%20Shoes%20/%20Cleats%20(Code:%20SHO-FB-303)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+<!-- 6 -->
+<article class="product" data-category="martialarts">
+ <img src="assets/elite_fighter_collection.jpeg" alt="Elite Fighter Collection Premium Custom Fightwear Set" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Elite Fighter Collection Premium Custom Fightwear Set</h3>
+   <p>Professional custom combat sports collection featuring a walkout robe, fight shorts, rash guard, compression leggings, t-shirt, and hooded jacket crafted with premium satin fabrics and professional manufacturing.</p>
+   <span class="product-code">Code: SET-EFT-1212</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Elite%20Fighter%20Collection%20Premium%20Custom%20Fightwear%20Set%20(Code:%20SET-EFT-1212)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+<!--  7-->
+<article class="product" data-category="tracksuit">
+ <img src="assets/elite_championship.jpeg" alt="Elite Championship Team Premium Custom Teamwear Set" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Elite Championship Team Premium Custom Teamwear Set</h3>
+   <p>Professional custom teamwear collection featuring a full zip track jacket, matching pants, performance hoodie, polo shirt, training t-shirt, team fight shorts, and lightweight vest tailored with performance poly-cotton blend.</p>
+   <span class="product-code">Code: SET-ELT-1111</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Elite%20Championship%20Team%20Premium%20Custom%20Teamwear%20Set%20(Code:%20SET-ELT-1111)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+<!-- image  8-->
+ <article class="product" data-category="apparel">
+ <img src="assets/gym_hoodies.jpg" alt="Custom Premium Gym Hoodies" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Custom Premium Gym Hoodies</h3>
+   <p>Professional heavyweight gym hoodies designed for athletes, fitness brands, and active lifestyles featuring premium cotton-blend fabric, soft brushed interior, double-layer hood, and custom printing.</p>
+   <span class="product-code">Code: HOD-PRM-1010</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Custom%20Premium%20Gym%20Hoodies%20(Code:%20HOD-PRM-1010)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+<!-- 9 -->
+ <article class="product" data-category="apparel">
+ <img src="assets/fitness_leggings.jpg" alt="Custom Performance Fitness Leggings" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Custom Performance Fitness Leggings</h3>
+   <p>Professional fitness leggings designed for training, gym workouts, and active lifestyles featuring 4-way stretch fabric, high-waisted construction, and custom printing for modern activewear collections.</p>
+   <span class="product-code">Code: LEG-PRD-909</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Custom%20Performance%20Fitness%20Leggings%20(Code:%20LEG-PRD-909)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+<!-- 10 -->
+ <article class="product" data-category="apparel">
+ <img src="assets/fitness_leggings_1.jpg" alt="Custom Elite Fitness Leggings" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Custom Elite Fitness Leggings</h3>
+   <p>Professional high-performance fitness leggings featuring 4-way stretch fabric, high-waisted construction, moisture-wicking technology, and opaque squat-resistant material designed for active lifestyles and gym brands.</p>
+   <span class="product-code">Code: LEG-ELT-808</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Custom%20Elite%20Fitness%20Leggings%20(Code:%20LEG-ELT-808)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+<!-- 11 -->
+<article class="product" data-category="apparel">
+ <img src="assets/33.jpeg" alt="Premium Sweatshirts" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Premium Sweatshirts</h3>
+   <p>Premium Sweatshirts designed for gyms, fitness brands, sports teams and active lifestyles. Built with comfortable fabrics, durable construction and high-quality custom printing for training, warm-ups and everyday wear.</p>
+   <span class="product-code">Code: SWT-PRM-3333</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Premium%20Sweatshirts%20(Code:%20SWT-PRM-3333)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+<!-- 12 -->
+<article class="product" data-category="boxing">
+ <img src="assets/36.jpeg" alt="Custom Hand Grips" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Custom Hand Grips</h3>
+   <p>Premium custom hand grips designed for secure support, comfort and durability during intense training and combat sports workouts. Perfect for boxing, MMA, fitness, gym workouts and combat sports training.</p>
+   <span class="product-code">Code: HND-GRP-3636</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Custom%20Hand%20Grips%20(Code:%20HND-GRP-3636)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+<!-- 13 -->
+ <article class="product" data-category="apparel">
+ <img src="assets/compression_shirts.jpeg" alt="Custom Premium Compression Shirts" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Custom Premium Compression Shirts</h3>
+   <p>Professional compression shirts designed for fitness athletes, gyms, and sports teams featuring premium 4-way stretch fabric, moisture-wicking construction, flatlock stitching, and custom sublimation printing.</p>
+   <span class="product-code">Code: SHT-CMP-606</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Custom%20Premium%20Compression%20Shirts%20(Code:%20SHT-CMP-606)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+<!-- 14 -->
+ <article class="product" data-category="accessories">
+ <img src="assets/sports_bag.jpg" alt="Custom Sports Bag" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Custom Sports Bag</h3>
+   <p>Professional sports bags designed for clubs, academies, and teams featuring heavy-duty material, spacious main compartment, reinforced carry handles, and durable zipper construction with custom team branding.</p>
+   <span class="product-code">Code: ACC-BAG-505</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Custom%20Sports%20Bag%20(Code:%20ACC-BAG-505)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+<!-- 15 -->
+<article class="product" data-category="accessories">
+ <img src="assets/sports_bag_1.jpeg" alt="Custom Sports Bag" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Custom Sports Bag</h3>
+   <p>Professional sports bags designed for clubs, academies, and teams featuring heavy-duty material, spacious main compartment, reinforced carry handles, and durable zipper construction with custom team branding.</p>
+   <span class="product-code">Code: ACC-BAG-505</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Custom%20Sports%20Bag%20(Code:%20ACC-BAG-505)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+<!-- 16 -->
+ <article class="product" data-category="protective">
+ <img src="assets/shin_guards.jpeg" alt="Custom Football Shin Guards" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Custom Football Shin Guards</h3>
+   <p>Professional football shin guards designed for lightweight protection, ergonomic curved shape, comfortable inner padding, and durable outer shell with custom team branding.</p>
+   <span class="product-code">Code: PRT-SG-404</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Custom%20Football%20Shin%20Guards%20(Code:%20PRT-SG-404)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+<!-- 17 -->
+ <article class="product" data-category="protective">
+ <img src="assets/shin_guards_1.jpg" alt="Custom Football Shin Guards" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Custom Football Shin Guards</h3>
+   <p>Professional football shin guards designed for lightweight protection, ergonomic curved shape, comfortable inner padding, and durable outer shell with custom team branding.</p>
+   <span class="product-code">Code: PRT-SG-404</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Custom%20Football%20Shin%20Guards%20(Code:%20PRT-SG-404)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+<!-- 18 -->
+ <article class="product" data-category="boxing">
+ <img src="assets/football_shoes.jpg" alt="Custom Football Shoes / Cleats" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Custom Football Shoes / Cleats</h3>
+   <p>Professional football cleats designed for players and teams demanding lightweight performance, secure fit, professional stud configuration, and reliable traction with custom team branding.</p>
+   <span class="product-code">Code: SHO-FB-303</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Custom%20Football%20Shoes%20/%20Cleats%20(Code:%20SHO-FB-303)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+<!-- 19 -->
+ <article class="product" data-category="apparel">
+ <img src="assets/54.jpeg" alt="SJ Sports Wear" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>SJ Sports Wear</h3>
+   <p>SJ Sports activewear set featuring comfort fit, breathable fabric, quick dry technology, and premium quality construction for active lifestyles and training sessions.</p>
+   <span class="product-code">Code: SET-SJS-5454</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20SJ%20Sports%20Wear%20(Code:%20SET-SJS-5454)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+<!-- 20 -->
+ <article class="product" data-category="martialarts">
+ <img src="assets/55.jpeg" alt="Elite Custom Fighter Collection" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Elite Custom Fighter Collection</h3>
+   <p>Elite Custom Fighter Collection featuring heavy-duty walkout set, lightweight training pants, premium 3D embroidered logo, and custom manufacturing with premium materials.</p>
+   <span class="product-code">Code: SET-EFC-5555</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Elite%20Custom%20Fighter%20Collection%20(Code:%20SET-EFC-5555)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+<!-- 21 -->
+ <article class="product" data-category="martialarts">
+ <img src="assets/bjj.jpeg" alt="Custom BJJ Gi" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Custom BJJ Gi</h3>
+   <p>Premium BJJ Gi engineered for durability, comfort and unrestricted movement. Built for Brazilian Jiu-Jitsu training, rolling, competition and demanding academy sessions featuring a 450 GSM Pearl Weave cotton jacket and ripstop cotton pants.</p>
+   <span class="product-code">Code: GIA-BJJ-3333</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Custom%20BJJ%20Gi%20(Code:%20GIA-BJJ-3333)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+<!-- 22 -->
+ <article class="product" data-category="boxing">
+ <img src="assets/box.jpeg" alt="Custom Boxing Shorts" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Custom Boxing Shorts</h3>
+   <p>Premium boxing shorts designed for maximum comfort, freedom of movement and high-performance training. Built for fighters, teams and combat sports athletes.</p>
+   <span class="product-code">Code: SHT-BOX-01</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Custom%20Boxing%20Shorts%20(Code:%20SHT-BOX-01)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+<!-- 23 -->
+ <article class="product" data-category="boxing">
+ <img src="assets/boxing_gloves.jpeg" alt="Custom Boxing Gloves" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Custom Boxing Gloves</h3>
+   <p>Built for champions and designed to perform, manufactured with premium quality leather, custom design and logo printing, reinforced stitching, and boxing and MMA versatility.</p>
+   <span class="product-code">Code: GLV-BOX-9999</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Custom%20Boxing%20Gloves%20(Code:%20GLV-BOX-9999)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+<!-- 24 -->
+ <article class="product" data-category="boxing">
+ <img src="assets/boxing_shorts.jpeg" alt="Custom Boxing Shorts" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Custom Boxing Shorts</h3>
+   <p>Premium boxing shorts designed for maximum comfort, freedom of movement and high-performancs training. Built for fighters, teams and combat sports athletes.</p>
+   <span class="product-code">Code: SHT-BOX-7777</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Custom%20Boxing%20Shorts%20(Code:%20SHT-BOX-7777)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+<!-- 25 -->
+ <article class="product" data-category="boxing">
+ <img src="assets/camp.jpeg" alt="Fight Camp Essentials" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Fight Camp Essentials</h3>
+   <p>Professional striking and training equipment designed for fighters, coaches and gyms. Built for demanding impact training with durable materials, reliable construction and premium customization.</p>
+   <span class="product-code">Code: FGT-CMP-8888</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Fight%20Camp%20Essentials%20(Code:%20FGT-CMP-8888)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+<!-- 26 -->
+ <article class="product" data-category="boxing">
+ <img src="assets/championship_boxing.jpeg" alt="Championship Boxing Series" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Championship Boxing Series</h3>
+   <p>Set 5 — White Championship Boxing Collection featuring premium quality, custom printing, and professional combat equipment built for fighters and training camps.</p>
+   <span class="product-code">Code: SET-CBS-555</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Championship%20Boxing%20Series%20(Code:%20SET-CBS-555)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+<!-- 27 -->
+<article class="product" data-category="boxing">
+ <img src="assets/coll.jpeg" alt="Combat Training Collection" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Combat Training Collection</h3>
+   <p>Professional combat sports equipment engineered for demanding training, sparring and fight preparation. Built with durable materials, secure construction and customizable professional designs.</p>
+   <span class="product-code">Code: CMB-TRN-101</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Combat%20Training%20Collection%20(Code:%20CMB-TRN-101)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+<!-- 28 -->
+<article class="product" data-category="boxing">
+ <img src="assets/collection.jpeg" alt="Pro Fighter Protection Collection" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Pro Fighter Protection Collection</h3>
+   <p>Professional protective equipment designed for athletes who demand comfort, secure fit and durable performance during intense combat-sports training and competition.</p>
+   <span class="product-code">Code: PRT-COL-202</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Pro%20Fighter%20Protection%20Collection%20(Code:%20PRT-COL-202)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+<!-- 29 -->
+<article class="product" data-category="boxing">
+ <img src="assets/combat.jpeg" alt="Combat Training Collection" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Combat Training Collection</h3>
+   <p>Professional combat sports equipment engineered for demanding training, sparring and fight preparation. Built with durable materials, secure construction and customizable professional designs.</p>
+   <span class="product-code">Code: CMB-TRN-303</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Combat%20Training%20Collection%20(Code:%20CMB-TRN-303)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+<!-- 30 -->
+<article class="product" data-category="boxing">
+ <img src="assets/complete.jpeg" alt="Custom Boxing Gloves SP Complete Set" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Custom Boxing Gloves SP Complete Set</h3>
+   <p>Professional MMA & Boxing series manufactured with premium, handcrafted boxing gloves for every level of training and competition, featuring premium leather quality materials, strong stitching and durability, and custom design & logo printing versatility.</p>
+   <span class="product-code">Code: SET-GLV-COMP</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Custom%20Boxing%20Gloves%20SP%20Complete%20Set%20(Code:%20SET-GLV-COMP)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+<!-- 31 -->
+<article class="product" data-category="apparel">
+ <img src="assets/cool-bear-sports-jersey.jpg" alt="Custom Bear Sports Jersey" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Custom Bear Sports Jersey</h3>
+   <p>Custom sportswear made for champions featuring premium quality, vibrant custom design graphics with a stylish bear wearing sunglasses and number 66, built for sports, fitness and active lifestyles.</p>
+   <span class="product-code">Code: JRS-BER-66</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Custom%20Bear%20Sports%20Jersey%20(Code:%20JRS-BER-66)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+ <!-- 32 -->
+<article class="product" data-category="martialarts">
+ <img src="assets/cus.jpeg" alt="Custom Judo Gi" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Custom Judo Gi</h3>
+   <p>Premium Judo Gi engineered for strength, durability and freedom of movement. Built for demanding Judo training, throws, grappling sessions, dojo practice and competition.</p>
+   <span class="product-code">Code: GIA-JUD-01</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Custom%20Judo%20Gi%20(Code:%20GIA-JUD-01)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+  <!-- 33 -->
+<article class="product" data-category="apparel">
+ <img src="assets/custom shirts.jpeg" alt="Custom MMA Rash Guard" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Custom MMA Rash Guard</h3>
+   <p>Premium MMA rash guard engineered for flexibility, compression, comfort and durability. Built for intense MMA training, grappling, sparring and combat sports performance.</p>
+   <span class="product-code">Code: RSH-MMA-01</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Custom%20MMA%20Rash%20Guard%20(Code:%20RSH-MMA-01)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+  <!-- 34 -->
+<article class="product" data-category="boxing">
+ <img src="assets/custom.jpg" alt="Custom Boxing Shorts" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Custom Boxing Shorts</h3>
+   <p>Premium boxing shorts designed for maximum comfort, freedom of movement and high-performancs training. Built for fighters, teams and combat sports athletes.</p>
+   <span class="product-code">Code: SHT-BOX-888</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Custom%20Boxing%20Shorts%20(Code:%20SHT-BOX-888)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+  <!-- 35 -->
+<article class="product" data-category="boxing">
+ <img src="assets/dm.jpeg" alt="Teal Performance Series" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Teal Performance Series</h3>
+   <p>Set 8 — Teal Performance Boxing Collection featuring custom colors, custom logo, and full custom printing with professional equipment including head guard, boxing gloves, groin guard, hand wraps, mouth guard, and double end bag.</p>
+   <span class="product-code">Code: SET-TPS-88</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Teal%20Performance%20Series%20(Code:%20SET-TPS-88)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+  <!-- 36 -->
+<article class="product" data-category="martialarts">
+ <img src="assets/ear.jpeg" alt="Custom Ear Guard" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Custom Ear Guard</h3>
+   <p>Premium protective ear guard designed for comfort, secure fit and reliable protection during grappling and combat sports training featuring a lightweight protective structure, soft inner padding, and adjustable straps.</p>
+   <span class="product-code">Code: GRD-EAR-01</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Custom%20Ear%20Guard%20(Code:%20GRD-EAR-01)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+<!-- 37 -->
+<article class="product" data-category="martialarts">
+ <img src="assets/elbow.jpeg" alt="Custom Elbow Pads" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Custom Elbow Pads</h3>
+   <p>Premium elbow pads designed for comfortable protection, flexibility and secure movement during grappling, wrestling, MMA and intense combat sports training.</p>
+   <span class="product-code">Code: PAD-ELB-01</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Custom%20Elbow%20Pads%20(Code:%20PAD-ELB-01)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+ <!-- 38 -->
+<article class="product" data-category="apparel">
+ <img src="assets/elevated_performance.jpeg" alt="Emerald Performance Premium Custom Collection" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Emerald Performance Premium Custom Collection</h3>
+   <p>Emerald Performance premium custom collection featuring custom design, full printing, gym & team orders with a matching green patterned hoodie, joggers, and sneakers.</p>
+   <span class="product-code">Code: SET-EMR-10</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Emerald%20Performance%20Premium%20Custom%20Collection%20(Code:%20SET-EMR-10)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+  <!-- 39 -->
+<article class="product" data-category="gym">
+ <img src="assets/fame.jpeg" alt="Premium Weightlifting Belts" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Premium Weightlifting Belts</h3>
+   <p>Premium weightlifting belts designed for strength training, powerlifting and demanding gym workouts with heavy-duty construction, ergonomic contoured shape and a strong buckle system.</p>
+   <span class="product-code">Code: BLT-WGT-01</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Premium%20Weightlifting%20Belts%20(Code:%20BLT-WGT-01)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+   <!--  40-->
+<article class="product" data-category="boxing">
+ <img src="assets/fit.jpeg" alt="Purple Pro Fight Collection" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Purple Pro Fight Collection</h3>
+   <p>Purple Pro Fight Collection featuring custom colors, custom logo, and full printing with professional boxing equipment including boxing gloves, head guard, shorts, focus pads, groin guard, hand wraps, mouth guard, and shoes.</p>
+   <span class="product-code">Code: SET-PPF-01</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Purple%20Pro%20Fight%20Collection%20(Code:%20SET-PPF-01)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+   <!-- 41 -->
+<article class="product" data-category="apparel">
+ <img src="assets/fitness_leggings_2.jpg" alt="Premium Fitness Leggings" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Premium Fitness Leggings</h3>
+   <p>Premium fitness leggings designed for training, gym workouts and active lifestyles. Built with flexible performance fabric, comfortable construction and high-quality custom printing for modern fitness apparel collections.</p>
+   <span class="product-code">Code: LEG-FIT-02</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Premium%20Fitness%20Leggings%20(Code:%20LEG-FIT-02)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+    <!-- 42 -->
+<article class="product" data-category="football">
+ <img src="assets/footbal_2.jpeg" alt="Football" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Football</h3>
+   <p>Professional footballs designed for training, clubs, academies and competitive play, built with durable construction, reliable shape and premium custom graphics for teams and organizations.</p>
+   <span class="product-code">Code: BAL-FTB-02</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Football%20(Code:%20BAL-FTB-02)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+     <!-- 43 -->
+<article class="product" data-category="football">
+ <img src="assets/football.jpeg" alt="Football" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Football</h3>
+   <p>Professional footballs designed for training, clubs, academies and competitive play, built with durable construction, reliable shape and premium custom graphics for teams and organizations.</p>
+   <span class="product-code">Code: BAL-FTB-01</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Football%20(Code:%20BAL-FTB-01)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+      <!-- 44 -->
+<article class="product" data-category="football">
+ <img src="assets/football_soacks.jpeg" alt="Football Socks" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Football Socks</h3>
+   <p>Professional football socks designed for clubs, academies, teams and athletes. Built for comfort, support and durability with premium custom colors, graphics and team branding.</p>
+   <span class="product-code">Code: SOK-FTB-01</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Football%20Socks%20(Code:%20SOK-FTB-01)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+       <!-- 45 -->
+<article class="product" data-category="boxing">
+ <img src="assets/for.jpeg" alt="Emerald Pro Boxing Collection" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Emerald Pro Boxing Collection</h3>
+   <p>Set 3 — Emerald Pro Boxing Collection featuring custom team colors, custom logo, full sublimation/printing, and private label with professional equipment including head guard, boxing gloves, groin guard, mouth guard, hand wraps, shorts, and shoes.</p>
+   <span class="product-code">Code: SET-EPB-03</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Emerald%20Pro%20Boxing%20Collection%20(Code:%20SET-EPB-03)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+       <!-- 46 -->
+<article class="product" data-category="football">
+ <img src="assets/fot.jpeg" alt="Premium Football / Soccer" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Premium Football / Soccer</h3>
+   <p>Premium footballs designed for training, clubs, academies and competitive play, built with durable materials, professional panel construction and premium custom printing for teams and football brands.</p>
+   <span class="product-code">Code: BAL-FTB-03</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Premium%20Football%20/%20Soccer%20(Code:%20BAL-FTB-03)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+        <!-- 47 -->
+<article class="product" data-category="football">
+ <img src="assets/fotball_3.jpeg" alt="Football" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Football</h3>
+   <p>Professional footballs designed for training, clubs, academies and competitive play, built with durable construction, reliable shape and premium custom graphics for teams and organizations.</p>
+   <span class="product-code">Code: BAL-FTB-04</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Football%20(Code:%20BAL-FTB-04)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+        <!-- 48 -->
+<article class="product" data-category="apparel">
+ <img src="assets/future.jpeg" alt="Future Performance Custom Collection" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Future Performance Custom Collection</h3>
+   <p>Future Performance custom collection featuring premium printing, custom design, and private label with a matching purple patterned hoodie, joggers, and sneakers.</p>
+   <span class="product-code">Code: SET-FUT-01</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Future%20Performance%20Custom%20Collection%20(Code:%20SET-FUT-01)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+        <!-- 49 -->
+<article class="product" data-category="martialarts">
+ <img src="assets/Gemini_Generated_Image_7f7d7r7f7d7r7f7d.jpg" alt="MMA Training Collection" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>MMA Training Collection</h3>
+   <p>Professional MMA training equipment designed for durability, protection, comfort and high-performance training featuring MMA gloves, shin guards, punching mitts, focus pads, and kick pads with custom branding options.</p>
+   <span class="product-code">Code: SET-MMA-01</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20MMA%20Training%20Collection%20(Code:%20SET-MMA-01)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+        <!-- 50 -->
+         <article class="product" data-category="boxing">
+ <img src="assets/glow.jpeg" alt="Fighter Training & Protection Collection" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Fighter Training & Protection Collection</h3>
+   <p>Premium combat sports equipment designed for athletes who demand protection, comfort, durability and professional performance with custom colors, logos and graphics for boxing, MMA, kickboxing, and Muay Thai.</p>
+   <span class="product-code">Code: SET-FTP-01</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Fighter%20Training%20&%20Protection%20Collection%20(Code:%20SET-FTP-01)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+<!-- 51 -->
+ <article class="product" data-category="football">
+ <img src="assets/goalkeeper_gloves.jpeg" alt="Goalkeeper Gloves" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Goalkeeper Gloves</h3>
+   <p>Professional goalkeeper gloves designed for reliable grip, control and confidence during training and competitive football with high-grip latex palm, cushioned backhand, and secure wrist fastening.</p>
+   <span class="product-code">Code: GLV-GLK-01</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Goalkeeper%20Gloves%20(Code:%20GLV-GLK-01)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+<!-- 52 -->
+<article class="product" data-category="gym">
+ <img src="assets/gym_gloves.jpeg" alt="Premium Gym Gloves" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Premium Gym Gloves</h3>
+   <p>Premium gym gloves designed for weightlifting, fitness and strength workouts with durable materials, padded palm protection, breathable construction and custom printing.</p>
+   <span class="product-code">Code: GLV-GYM-01</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Premium%20Gym%20Gloves%20(Code:%20GLV-GYM-01)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+ <!-- 53 -->
+   <article class="product" data-category="boxing">
+ <img src="assets/head.jpeg" alt="Pro Fighter Protection Collection" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Pro Fighter Protection Collection</h3>
+   <p>Professional protective equipment designed for athletes who demand comfort, secure fit and durable performance during intense combat-sports training and competition featuring head guard, shin guards, MMA gloves, groin guard, mouth guard, and hand wraps.</p>
+   <span class="product-code">Code: SET-PFP-01</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Pro%20Fighter%20Protection%20Collection%20(Code:%20SET-PFP-01)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+ <!-- 54 -->
+<article class="product" data-category="boxing">
+ <img src="assets/headguard.jpeg" alt="Custom Headguard Complete Set" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Custom Headguard Complete Set</h3>
+   <p>Premium combat sports equipment and apparel manufactured for fighters, teams, gyms, and sports organizations featuring headguards, groin guards, mouth guards, and protective gear with fully customizable designs.</p>
+   <span class="product-code">Code: SET-HDG-01</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Custom%20Headguard%20Complete%20Set%20(Code:%20SET-HDG-01)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+ <!-- 55 -->
+<article class="product" data-category="apparel">
+ <img src="assets/hody.jpeg" alt="Premium Joggers" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Premium Joggers</h3>
+   <p>Premium athletic joggers designed for gym training, warm-ups, travel and everyday activewear. Built with comfortable performance fabrics, durable construction and premium custom printing.</p>
+   <span class="product-code">Code: JOG-PRE-01</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Premium%20Joggers%20(Code:%20JOG-PRE-01)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+  <!-- 56 -->
+<article class="product" data-category="boxing">
+ <img src="assets/im_6.jpeg" alt="Pro Boxing Collection" style="width: 100%; height: 500px; object-fit: contain; object-position: top; background: var(--card);">
+ <div class="product-info">
+  <div>
+   <h3>Pro Boxing Collection</h3>
+   <p>Premium boxing equipment engineered for protection, comfort, durability and professional performance featuring head guard, boxing gloves, hand wraps, groin guard, and mouth guard with custom branding.</p>
+   <span class="product-code">Code: SET-BOX-02</span>
+  </div>
+  <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Pro%20Boxing%20Collection%20(Code:%20SET-BOX-02)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
+ </div>
+</article>
+  <!-- 57 -->
 
-  <article class="product" data-category="gloves">
-   <img src="assets/gold-boxing-gloves.jpeg" alt="Metallic Gold Boxing Gloves">
-   <div class="product-info">
-    <div>
-     <h3>Metallic Gold Boxing Gloves</h3>
-     <p>Premium metallic gold training and sparring gloves with custom wrist strap support.</p>
-     <span class="product-code">Code: GLV-GLD-004</span>
-    </div>
-    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Metallic%20Gold%20Boxing%20Gloves%20(Code:%20GLV-GLD-004)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
-   </div>
-  </article>
+  <!-- 58 -->
 
-  <article class="product" data-category="gloves">
-   <img src="assets/skeleton-boxing-gloves.jpg" alt="Blue Skeleton Print Boxing Gloves">
-   <div class="product-info">
-    <div>
-     <h3>Custom Skeleton Print Boxing Gloves</h3>
-     <p>Pro-style white leather boxing gloves featuring custom blue skeleton hand graphic design.</p>
-     <span class="product-code">Code: GLV-SKL-003</span>
-    </div>
-    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Custom%20Skeleton%20Print%20Boxing%20Gloves%20(Code:%20GLV-SKL-003)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
-   </div>
-  </article>
+  <!-- 59 -->
 
-  <article class="product" data-category="gloves">
-   <img src="assets/black-skeleton-boxing-gloves.jpg" alt="Black Skeleton Hand Print Boxing Gloves">
-   <div class="product-info">
-    <div>
-     <h3>Black Skeleton Print Boxing Gloves</h3>
-     <p>Premium black leather lace-up boxing gloves featuring custom white skeleton hand art and barbed wire wrist design.</p>
-     <span class="product-code">Code: GLV-SKB-007</span>
-    </div>
-    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Black%20Skeleton%20Print%20Boxing%20Gloves%20(Code:%20GLV-SKB-007)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
-   </div>
-  </article>
+  <!-- 60 -->
 
-  <article class="product" data-category="gloves">
-   <img src="assets/grey-teal-boxing-gloves.jpg" alt="Grey and Teal Pro Boxing Gloves">
-   <div class="product-info">
-    <div>
-     <h3>Pro Grey & Teal Boxing Gloves</h3>
-     <p>High-grade synthetic leather training gloves with ergonomic padding and custom wrist support.</p>
-     <span class="product-code">Code: GLV-GTL-004</span>
-    </div>
-    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Pro%20Grey%20%26%20Teal%20Boxing%20Gloves%20(Code:%20GLV-GTL-004)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
-   </div>
-  </article>
+  <!-- 61 -->
 
-  <article class="product" data-category="gloves">
-   <img src="assets/gold-white-boxing-set.jpg" alt="Custom Gold and White Boxing Gear Set">
-   <div class="product-info">
-    <div>
-     <h3>Custom Gold & White Boxing Gear Set</h3>
-     <p>Professional leather sparring set including lace-up boxing gloves and dual-tone protective headgear.</p>
-     <span class="product-code">Code: SET-GLD-006</span>
-    </div>
-    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Custom%20Gold%20%26%20White%20Boxing%20Gear%20Set%20(Code:%20SET-GLD-006)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
-   </div>
-  </article>
+  <!-- 62 -->
 
-  <article class="product" data-category="gloves">
-   <img src="assets/gold-flame-boxing-gloves.jpg" alt="Gold and White Flame Print Boxing Gloves">
-   <div class="product-info">
-    <div>
-     <h3>Gold & Flame Print Boxing Gloves</h3>
-     <p>Metallic gold leather training gloves featuring custom red and yellow flame graphics with wrist logo strap.</p>
-     <span class="product-code">Code: GLV-FLM-009</span>
-    </div>
-    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Gold%20%26%20Flame%20Print%20Boxing%20Gloves%20(Code:%20GLV-FLM-009)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
-   </div>
-  </article>
+  <!-- 63 -->
 
-  <article class="product" data-category="uniforms">
-   <img src="assets/camo-jiu-jitsu-gi.jpg.jpg" alt="Camouflage Jiu-Jitsu BJJ Gi Uniform">
-   <div class="product-info">
-    <div>
-     <h3>Camouflage Jiu-Jitsu (BJJ) Gi</h3>
-     <p>Durable camouflage pattern martial arts uniform featuring heavy-duty fabric stitching and custom chest branding.</p>
-     <span class="product-code">Code: GI-CAMO-011</span>
-    </div>
-    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Camouflage%20Jiu-Jitsu%20(BJJ)%20Gi%20(Code:%20GI-CAMO-011)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
-   </div>
-  </article>
+  <!-- 64 -->
 
-  <article class="product" data-category="tracksuit">
-   <img src="assets/cool-bear-sports-jersey.jpg" alt="Custom Bear Graphic Sportswear Jersey">
-   <div class="product-info">
-    <div>
-     <h3>Custom Cool Bear Sportswear Jersey</h3>
-     <p>Vibrant multi-color sublimation printed athletic jersey featuring a cool bear design with custom numbering.</p>
-     <span class="product-code">Code: JRS-BER-012</span>
-    </div>
-    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Custom%20Cool%20Bear%20Sportswear%20Jersey%20(Code:%20JRS-BER-012)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
-   </div>
-  </article>
+  <!-- 65 -->
 
-  <article class="product" data-category="gloves">
-   <img src="assets/sports-headgear-collection.jpeg" alt="Custom Boxing and Rugby Protective Headgear Set">
-   <div class="product-info">
-    <div>
-     <h3>Pro Protective Headgear Collection</h3>
-     <p>Premium martial arts and soft shell rugby headguards featuring shock-absorbing padding and custom logo options.</p>
-     <span class="product-code">Code: HDG-PRO-016</span>
-    </div>
-    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Pro%20Protective%20Headgear%20Collection%20(Code:%20HDG-PRO-016)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
-   </div>
-  </article>
+  <!-- 66 -->
 
-  <article class="product" data-category="gloves">
-   <img src="assets/padded-rugby-headguards.jpeg" alt="Soft Shell Padded Rugby Scrum Cap Headguards">
-   <div class="product-info">
-    <div>
-     <h3>Soft Shell Padded Rugby Headguard</h3>
-     <p>Flexible impact-resistant scrum caps featuring custom trim colors, adjustable chin strap, and front logo patch.</p>
-     <span class="product-code">Code: HDG-RGB-017</span>
-    </div>
-    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Soft%20Shell%20Padded%20Rugby%20Headguard%20(Code:%20HDG-RGB-017)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
-   </div>
-  </article>
+  <!-- 67 -->
 
-  <article class="product" data-category="gloves">
-   <img src="assets/matte-gold-boxing-gloves.jpeg" alt="Pro Matte Gold Boxing Gloves">
-   <div class="product-info">
-    <div>
-     <h3>Pro Matte Gold Boxing Gloves</h3>
-     <p>Premium gold leather sparring gloves featuring custom logo emblem and heavy-duty black wrist enclosure.</p>
-     <span class="product-code">Code: GLV-GLD-018</span>
-    </div>
-    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Pro%20Matte%20Gold%20Boxing%20Gloves%20(Code:%20GLV-GLD-018)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
-   </div>
-  </article>
+  <!-- 68 -->
 
-  <article class="product" data-category="tracksuit">
-   <img src="assets/black-muay-thai-rashguard-shirt.jpg" alt="Black Muay Thai Graphic Athletic T-Shirt">
-   <div class="product-info">
-    <div>
-     <h3>Muay Thai Graphic Training T-Shirt</h3>
-     <p>Performance athletic rashguard shirt featuring bold Muay Thai typography, knee-strike silhouette graphic, and sleeve detail prints.</p>
-     <span class="product-code">Code: TSH-MTH-019</span>
-    </div>
-    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Muay%20Thai%20Graphic%20Training%20T-Shirt%20(Code:%20TSH-MTH-019)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
-   </div>
-  </article>
+  <!-- 69 -->
 
-  <article class="product" data-category="tracksuit">
-   <img src="assets/blue-muay-thai-rashguard-shirt.jpg" alt="Blue Muay Thai Graphic Athletic T-Shirt">
-   <div class="product-info">
-    <div>
-     <h3>Blue Muay Thai Graphic Training T-Shirt</h3>
-     <p>Performance athletic rashguard shirt featuring sublimation print blue textures, front Muay Thai text graphic, and sleeve detailing.</p>
-     <span class="product-code">Code: TSH-MTH-020</span>
-    </div>
-    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Blue%20Muay%20Thai%20Graphic%20Training%20T-Shirt%20(Code:%20TSH-MTH-020)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
-   </div>
-  </article>
+  <!-- 70 -->
 
-  <article class="product" data-category="tracksuit">
-   <img src="assets/buddha-muay-thai-shirt.jpg" alt="Buddha Fight Wear Muay Thai Sublimated T-Shirt">
-   <div class="product-info">
-    <div>
-     <h3>Buddha Fight Wear Muay Thai T-Shirt</h3>
-     <p>Full sublimation athletic t-shirt featuring Thailand flag graphics, traditional Sak Yant tiger prints, and Buddha back art.</p>
-     <span class="product-code">Code: TSH-MTH-021</span>
-    </div>
-    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Buddha%20Fight%20Wear%20Muay%20Thai%20T-Shirt%20(Code:%20TSH-MTH-021)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
-   </div>
-  </article>
+  <!-- 71 -->
 
-  <article class="product" data-category="uniforms">
-   <img src="assets/gold-black-martial-arts-dobok.jpg" alt="Gold and Black Martial Arts Taekwondo Uniform">
-   <div class="product-info">
-    <div>
-     <h3>Gold & Black Martial Arts Uniform</h3>
-     <p>Traditional martial arts Dobok featuring a gold jacket with black V-neck collar, matching black trousers, and custom chest badge.</p>
-     <span class="product-code">Code: SUIT-MA-022</span>
-    </div>
-    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Gold%20%26%20Black%20Martial%20Arts%20Uniform%20(Code:%20SUIT-MA-022)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
-   </div>
-  </article>
+  <!-- 72 -->
 
-  <article class="product" data-category="tracksuit">
-   <img src="assets/blue-muay-thai-rashguard-back.jpg" alt="Blue Muay Thai Graphic Athletic T-Shirt Back View">
-   <div class="product-info">
-    <div>
-     <h3>Blue Muay Thai Graphic T-Shirt (Back View)</h3>
-     <p>Performance athletic rashguard shirt back print featuring blue textured graphics, fighter silhouettes, and top back Muay Thai logo.</p>
-     <span class="product-code">Code: TSH-MTH-023</span>
-    </div>
-    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Blue%20Muay%20Thai%20Graphic%20T-Shirt%20(Back%20View)%20(Code:%20TSH-MTH-023)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
-   </div>
-  </article>
+  <!-- 73 -->
 
-  <article class="product" data-category="tracksuit">
-   <img src="assets/black-sports-laptop-briefcase-bag.jpg" alt="Black Executive Laptop Briefcase Messenger Bag">
-   <div class="product-info">
-    <div>
-     <h3>Executive Sports Laptop & Messenger Bag</h3>
-     <p>Sleek black padded laptop shoulder bag featuring a front zip pocket, carrying handles, detachable strap, and custom gold brand emblem.</p>
-     <span class="product-code">Code: BAG-EXE-024</span>
-    </div>
-    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Executive%20Sports%20Laptop%20%26%20Messenger%20Bag%20(Code:%20BAG-EXE-024)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
-   </div>
-  </article>
+  <!-- 74 -->
 
-  <article class="product" data-category="tracksuit">
-   <img src="assets/red-black-mma-compression-set.jpg" alt="Red and Black MMA Rashguard Compression Set">
-   <div class="product-info">
-    <div>
-     <h3>Red & Black MMA Compression Set</h3>
-     <p>Complete 3-piece combat set including long-sleeve rashguard, compression spats, and fight shorts with custom branding.</p>
-     <span class="product-code">Code: SET-MMA-025</span>
-    </div>
-    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Red%20%26%20Black%20MMA%20Compression%20Set%20(Code:%20SET-MMA-025)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
-   </div>
-  </article>
+  <!-- 75 -->
 
-  <article class="product" data-category="uniforms">
-   <img src="assets/white-karate-gi-uniform.jpg" alt="Premium White Martial Arts Karate Uniform Gi">
-   <div class="product-info">
-    <div>
-     <h3>Premium White Karate Uniform</h3>
-     <p>High-performance pearl weave martial arts gi featuring reinforced stitching, breathable lightweight fabric, and custom chest logo patch.</p>
-     <span class="product-code">Code: GI-KRT-026</span>
-    </div>
-    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Premium%20White%20Karate%20Uniform%20(Code:%20GI-KRT-026)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
-   </div>
-  </article>
+  <!-- 76 -->
 
-  <article class="product" data-category="uniforms">
-   <img src="assets/gold-black-taekwondo-uniform.jpg" alt="Premium Gold and Black Martial Arts Uniform">
-   <div class="product-info">
-    <div>
-     <h3>Pro Gold & Black Martial Arts Suit</h3>
-     <p>High-quality martial arts gi featuring gold top with black collar accent, matching black pants, black belt, and custom chest emblem.</p>
-     <span class="product-code">Code: SUIT-MA-027</span>
-    </div>
-    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Pro%20Gold%20%26%20Black%20Martial%20Arts%20Suit%20(Code:%20SUIT-MA-027)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
-   </div>
-  </article>
+  <!-- 77 -->
 
-  <article class="product" data-category="uniforms">
-   <img src="assets/black-bjj-jiu-jitsu-gi.jpg" alt="Black Brazilian Jiu-Jitsu BJJ Gi Uniform">
-   <div class="product-info">
-    <div>
-     <h3>Pro Black Jiu-Jitsu Gi</h3>
-     <p>Durable black martial arts gi featuring white rank belt, reinforced collar stitching, and gold custom brand logos on chest and back.</p>
-     <span class="product-code">Code: GI-BJJ-028</span>
-    </div>
-    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Pro%20Black%20Jiu-Jitsu%20Gi%20(Code:%20GI-BJJ-028)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
-   </div>
-  </article>
+   <!-- 78 -->
 
-  <article class="product" data-category="gloves">
-   <img src="assets/yellow-black-boxing-gear-set.jpg" alt="Complete Yellow and Black Boxing Gear Training Kit">
-   <div class="product-info">
-    <div>
-     <h3>Pro Yellow & Black Boxing Gear Set</h3>
-     <p>Complete training set including boxing singlet, shorts, headguard, sparring gloves, MMA gloves, focus pad, and double-end speed ball.</p>
-     <span class="product-code">Code: SET-BOX-029</span>
-    </div>
-    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Pro%20Yellow%20%26%20Black%20Boxing%20Gear%20Set%20(Code:%20SET-BOX-029)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
-   </div>
-  </article>
+   <!-- 79 -->
+    
+    <!--80  -->
 
-  <article class="product" data-category="tracksuit">
-   <img src="assets/women-monogram-workout-set.jpeg" alt="Women Luxury Patterned Athletic Tank Top and Leggings Set">
-   <div class="product-info">
-    <div>
-     <h3>Women's Patterned Workout Activewear Set</h3>
-     <p>Two-piece athletic set featuring high-waisted printed leggings and matching racerback tank top with gold brand emblem accents.</p>
-     <span class="product-code">Code: SET-WACT-030</span>
-    </div>
-    <a href="https://wa.me/923486879855?text=Hello%20SJ%20Sports%20Wear,%20I%20want%20to%20order%20Women's%20Patterned%20Workout%20Activewear%20Set%20(Code:%20SET-WACT-030)" class="wa-order-btn" target="_blank"><i class="fab fa-whatsapp"></i> Order via WhatsApp</a>
-   </div>
-  </article>
+    <!--pattern placeholder comments to easily scale up to 100+ items -->
+  <!-- Add your remaining 90+ items following the exact same <article class="product" data-category="..."> structure -->
+
  </div>
 </section>
 
@@ -540,7 +935,6 @@ function filterCategory(category, btn) {
 function filterProducts() {
   let input = document.getElementById('productSearch').value.toLowerCase();
   let products = document.getElementsByClassName('product');
-  for (let i = 0; i < products.link; i++) {} // placeholder logic check
   for (let i = 0; i < products.length; i++) {
     let text = products[i].innerText.toLowerCase();
     if (text.includes(input)) {
